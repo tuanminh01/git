@@ -91,3 +91,7 @@ function Cat(name) {
   this.name = name;
   this.die = false;
 }
+
+Cat.prototype.eat = function () {
+  this.die = true;
+}

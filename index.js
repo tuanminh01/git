@@ -86,3 +86,8 @@ e.forEach((item) => {
 });
 
 console.log(arr);
+
+function Cat(name) {
+  this.name = name;
+  this.die = false;
+}

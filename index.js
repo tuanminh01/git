@@ -86,12 +86,23 @@ e.forEach((item) => {
 });
 
 console.log(arr);
-
+var Dog = require('./Dog')
 function Cat(name) {
   this.name = name;
   this.die = false;
+  this.stomach = [];
 }
 
-Cat.prototype.eat = function () {
+Cat.prototype.eat = function (animal) {
   this.die = true;
+  if (animal instanceof Dog) {
+    this.stomach.push(animal);
+  } else {
+    throw new Error('Cat can eat mouse');
+  }
 }
+
+let dog = new Dog("bull");
+let cat = new Cat("cat");
+cat.eat(dog);
+console.log(cat);

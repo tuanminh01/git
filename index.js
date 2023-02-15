@@ -74,8 +74,8 @@ let dog = new Dog("bull");
 let cat = new Cat("cat");
 
 try {
- cat.eat(dog);  
- console.log(cat);
+  cat.eat(dog);
+  console.log(cat);
 } catch (error) {
 
 }  

@@ -29,4 +29,4 @@ function groupByName(arr) {
 
 let arr = groupByName(e);
 
-console.log(arr);
+console.log(arr + "\r\n");

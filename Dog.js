@@ -27,6 +27,4 @@ function groupByName(arr) {
     return result;
 }
 
-let arr = groupByName(e);
-
-console.log(arr + "\r\n");
+console.log(groupByName(e));

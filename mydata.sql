@@ -38,7 +38,7 @@ insert into users(username, email, password, birthday, image_url, role) values (
 insert into users(username, email, password, birthday, image_url, role) values ('minhloc','minhloc123@gmail.com', '123456', '2000-11-22', 'ascscsca17d','user');
 
 create table categories (
-	id bigint auto_increment,
+    id bigint auto_increment,
     category_name varchar(50) not null,
     created_at timestamp not null default CURRENT_TIMESTAMP,
     updated_at timestamp not null default CURRENT_TIMESTAMP,
@@ -52,7 +52,7 @@ insert into categories(category_name) values ('nhom D');
 insert into categories(category_name) values ('nhom E');
 
 create table companies (
-	id bigint auto_increment,
+    id bigint auto_increment,
     company_name nvarchar(50) not null,
     company_code nvarchar(255) not null,
     created_at timestamp not null default CURRENT_TIMESTAMP,
@@ -68,7 +68,7 @@ insert into companies(company_name, company_code) values ('VTI', '134986');
 insert into companies(company_name, company_code) values ('Sun*', '132189');
 
 create table projects (
-	id bigint auto_increment,
+    id bigint auto_increment,
     project_name nvarchar(50) not null,
     category_id bigint,
     projected_spend int,
@@ -94,7 +94,7 @@ insert into projects(project_name, category_id, projected_spend,projected_varian
 values ('project 5', 5, 100, 1, 150, 4);
 
 create table project_users (
-	id bigint auto_increment,
+    id bigint auto_increment,
     project_id bigint,
     user_id bigint, 
     created_at timestamp not null default CURRENT_TIMESTAMP,

@@ -3,7 +3,7 @@ create database mydata;
 use mydata;
 
 create table users (
-id bigint auto_increment,
+    id bigint auto_increment,
     username varchar(16) not null,
     email nvarchar(50) not null,
     password nvarchar(10) not null,
